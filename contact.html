@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+  *{
+    color: aliceblue;
+  }
+      .container-fluid {
+             padding: 60px 50px;
+          }
+          .now{
+            border: 1px solid;
+            width: 100%;
+            height: 450px;
+            background-image: url(./309.jpg);
+            animation-name: color;
+            animation-duration: 10s;
+            color: aliceblue;
+          }
+          @keyframes color{
+            0%{ 
+                
+                background-image: url(./309.jpg);
+            }
+            50%{
+                background-image: url(./310.jpg);
+            }
+            100%{
+                background-image: url(./311.jpg);
+            }
+          }
+          .quit{
+            width: 500px;
+            height:500px;
+            border: 1px solid;
+            place-content: center;
+            text-align: center;
+            right:50%;
+            margin-left: 400px;
+            margin-top: 40px;
+          }
+          .about{
+            font-family: 'Times New Roman', Times, serif;
+            font-size: medium;
+          
+          }
+          .control{
+            text-align: center;
+            justify-content: center;
+            text-shadow: 0cqw;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-size: x-large;
+          }
+          .parallax {
+           background-image: url("./311.jpg");
+          min-height: 500px; 
+         background-attachment: fixed;
+         background-position: center;
+         background-repeat: no-repeat;
+         background-size: cover;
+}
+         .full{
+          background-image: url(./113.jpg);
+          background-repeat: no-repeat;
+          background-size:cover ;
+         }
+         #button{
+          color: black;
+         }
+</style>
+<body>
+    <div class="now">
+        <div id="about" class="container-fluid">
+            <div class="row">
+              <div class="col-sm-8">
+             
+                <h2>About Company Page</h2><br>
+                <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h4><br>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <br><button class="btn btn-default btn-lg" id="button" background-color="black">Get in Touch</button>
+              </div>
+            </div>
+        </div>
+    </div>
+    <div class="parallax"></div>
+    <div class="full">
+            <br>
+            <div class="control">
+              <h2>
+                HISTORY
+              </h2>
+                  <P>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h4><br>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat
+                  </P>
+            </div>
+             <div class="quit">
+
+                <h2 class="text-center">CONTACT</h2>
+                <div class="row">
+                  <div class="col-sm-5">
+                    <p>Contact us and we'll get back to you within 24 hours.</p>
+                    <p><span class="glyphicon glyphicon-map-marker"></span>Address : Chicago, US</p>
+                    <p><span class="glyphicon glyphicon-phone"></span> phone number: +00 1515151515</p>
+                    <p><span class="glyphicon glyphicon-envelope"></span> Email :myemail@something.com</p>
+                  </div>
+                  <div class="col-sm-7">
+                    <div class="row">
+                      <div class="col-sm-6 form-group">
+                        <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+                      </div>
+                      <br>
+
+                      <div class="col-sm-6 form-group">
+                        <input class="form-control" id="email" name="email" placeholder="email" type="text" required>
+                      </div>
+                      <br>
+                      <textarea class="form-control" id="comments" name="comments" placeholder="comments" rows="5"></textarea><br>
+                      <div class="row">
+                        <div class="col-sm-12 form-group">
+                      <button class="btn btn-default pull-right"  id ="button"  type="submit">send</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+             </div>
+             </div>
+    
+</body>
+</html>

@@ -1,0 +1,18 @@
+body{
+    margin: o;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    overflow: hidden;
+}
+.body{
+    width: 800px;
+    height: 500px;
+    border-radius: 10px;
+}
+.heart{
+    width: 500%;
+    height: 500px;
+    display: flex;
+}
